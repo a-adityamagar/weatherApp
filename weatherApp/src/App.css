@@ -185,7 +185,7 @@ img {
 /*-- Index-Page-Styling --*/
 
 body {
-  background: url("./images/background.jpg");
+  background: url("https://www.constructionviewonline.co.uk/wp-content/uploads/2021/07/Sunny-Day.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -219,13 +219,14 @@ h1 {
   width: 65%;
   height: 80vh;
   margin: 50px auto;
-  background-color: rgba(0, 0, 0, 0.73);
+  background: rgba(0, 0, 0, 0.90);
 }
 
 .city {
   width: 60%;
   height: 100%;
   float: left;
+  background: url("https://www.constructionviewonline.co.uk/wp-content/uploads/2021/07/Sunny-Day.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-background-size: cover;
