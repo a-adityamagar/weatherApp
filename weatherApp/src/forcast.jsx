@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { API_CONFIG } from './apiKeys';
 import ReactAnimatedWeather from "react-animated-weather";
+import {Icon} from '@iconify/react';
 
 function Forecast(props) {
   const [query, setQuery] = useState("");
@@ -66,10 +67,11 @@ function Forecast(props) {
             onKeyPress={handleKeyPress}
           />
           <button 
+          style={{background:"transparent", border:"none"}}
             onClick={() => query.trim() && search(query)}
             disabled={loading}
           >
-            {loading ? 'Searching...' : 'Search'}
+            {loading ? 'Searching...' : <Icon icon="ic:outline-search"  style={{color: "white" , height:"30px", width:"30px", border:"none", backgroundColor:"transparent"}} />}
           </button>
         </div>
         {weather.main ? (
